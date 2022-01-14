@@ -1,0 +1,78 @@
+matricula, nome, curso, disciplina_1, nota_1, disciplina_2, nota_2, disciplina_3, nota_3, disciplina_4, nota_4
+2018321098, Iago, Design, Design de Produtos, 100, Desenvolvimento de Produtos, 100, Marketing, 100
+2021231202, Gabriela, Desenvolvimento de sistemas, Desenvolvimento de Aplicacoes Web, 82, Programacao Orientada a Objetos, 93, Sistemas operacionais, 100, Empreendedorismo, 100
+2193109187, Jair, Eletrônica, Circuitos Digitais, 85, Sistemas Embarcados, 100 
+2012786310, Cristina, Automação Industrial, Domótica e Robótica, 74, Empreendedorismo, 93, Educação Física, 95
+
+->
+
+[alunos]
+matricula, nome, curso
+2018321098, Iago, Design
+2021231202, Gabriela, Desenvolvimento de sistemas
+2193109187, Jair, Eletrônica
+2012786310, Cristina, Automação Industrial
+
+[notas]
+id, alunos_matricula, disciplina, nota
+0, 2018321098, Design de Produtos, 100
+1, 2018321098, Desenvolvimento de Produtos, 100
+2, 2018321098, Marketing, 100
+
+3, 2021231202, Desenvolvimento de Aplicacoes Web, 82
+4, 2021231202, Programacao Orientada a Objetos, 93
+5, 2021231202, Sistemas operacionais, 100
+6, 2021231202, Empreendedorismo, 100
+
+7, 2193109187, Circuitos Digitais, 85
+8, 2193109187, Sistemas Embarcados, 100
+
+9, 2012786310, Domótica e Robótica, 74
+10, 2012786310, Empreendedorismo, 93
+11, 2012786310, Educação Física, 95
+
+->
+
+[alunos]
+matricula, nome, cursos_id
+2018321098, Iago, 0
+2021231202, Gabriela, 1
+2193109187, Jair, 2
+2012786310, Cristina, 3
+
+[cursos]
+id, nome
+0, Design
+1, Desenvolvimento de sistemas
+2, Eletrônica
+3, Automação Industrial
+
+[disciplinas]
+curso_id, id, nome
+0, 0, Design de Produtos
+0, 1, Desenvolvimento de Produtos
+0, 2, Marketing
+1, 0, Desenvolvimento de Aplicacoes Web
+1, 1, Programacao Orientada a Objetos
+1, 2, Sistemas operacionais
+1, 3, Empreendedorismo
+2, 0, Circuitos Digitais
+2, 1, Sistemas Embarcados
+3, 0, Domótica e Robótica
+3, 1, Empreendedorismo
+3, 2, Educação Física
+
+[notas]
+matricula, disciplina_id, nota
+2018321098, 0, 100
+2018321098, 1, 100
+2018321098, 2, 100
+2021231202, 0, 82
+2021231202, 1, 93
+2021231202, 2, 100
+2021231202, 3, 100
+2193109187, 0, 85
+2193109187, 1, 100
+2012786310, 0, 74
+2012786310, 1, 93
+2012786310, 2, 95
